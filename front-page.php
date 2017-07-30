@@ -6,31 +6,11 @@
 			<div class="" id="slider">
 				<div class="container full-width">
 				  <ul class="slides">
-					<li>
-									  <img src="<?php echo get_template_directory_uri(); ?>/library/images/slider-child.jpg" alt="child with English Cream golden retriever puppy" width="100%" />
-									</li>
-									
-									<li>
-									  <img src="<?php echo get_template_directory_uri(); ?>/library/images/slider-pup.jpg" alt="English Cream golden retriever puppy" width="100%" />
-									</li>
-									
-									<li>
-									  <img src="<?php echo get_template_directory_uri(); ?>/library/images/slider-dogside.jpg" alt="Eglish Cream golden retriever adult" />
-									</li>
-									
-									
-									
-									<li>
-									  <img src="<?php echo get_template_directory_uri(); ?>/library/images/slider-dogfront.jpg" alt="English Cream golden retriever" />
-									</li>
-									
-									
-					<!-- items mirrored twice, total of 12 -->
-				  </ul>
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/home-banner.jpg" alt="child with English Cream golden retriever puppy" width="100%" />
 					<a href="<?php echo get_site_url(); ?>/reserve-puppy">
 						
 						<span class="blue-back">
-							<h3>New puppies arriving soon!<br>
+							<h3>New puppies have arrived!!<br>
 								<strong>Reserve Your White Golden Retriever Puppy Today!</strong>
 							</h3>
 						</span>
