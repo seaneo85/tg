@@ -27,6 +27,13 @@
 									
 					<!-- items mirrored twice, total of 12 -->
 				  </ul>
+					<a href="<?php get_site_url(); ?>/reserve-puppy">
+						
+						<h3>New puppies arriving soon!<br>
+							<strong>Reserve Your White Golden Retriever Puppy Today!</strong>
+						
+					
+					</a>
 				</div> <!-- End .flexslider -->
 			</div> <!-- End slider -->
 
