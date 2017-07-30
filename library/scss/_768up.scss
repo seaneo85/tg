@@ -234,6 +234,12 @@ POSTS & CONTENT STYLES
 		min-height: 180px;
 		float: none;
 		
+		&.ms-item {
+			border-bottom: 0 !important;
+			width: 50%;
+			padding: 0 40px;
+		}
+		
 		
 		&:before {
 			content: '';
@@ -255,6 +261,8 @@ POSTS & CONTENT STYLES
 	.quote-img {
 		float: left;
 		width: auto;
+		position: relative;
+		z-index: 2;
 		
 		img {
 			border-radius: 50%;
@@ -498,4 +506,3 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
-
