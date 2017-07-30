@@ -801,7 +801,7 @@ HEADER STYLES
   background-image: -moz-linear-gradient(top, #6d9eb8, #51839a);
   background-image: -o-linear-gradient(top, #6d9eb8, #51839a);
   background-image: linear-gradient(to bottom, #6d9eb8, #51839a);
-  border-bottom: .3em solid #0a5070; }
+  margin-bottom: 20px; }
   .header .wrap {
     width: 100%;
     margin: 0; }
@@ -932,45 +932,49 @@ header {
 /*********************
 SLIDER
 *********************/
-.flex-direction-nav a {
-  transition: all 0s !important; }
-
 #slider {
-  background-color: #dbe5e7;
-  width: 100%;
-  border-bottom: 1px solid #b9bdbe;
-  border: 0;
+  position: relative;
+  z-index: 0;
   overflow: hidden; }
-  #slider .flexslider {
-    margin: 0 auto;
-    float: none;
-    border: 0 !important; }
-    #slider .flexslider .flex-prev, #slider .flexslider .flex-next {
-      height: 369px;
-      margin: 0;
-      top: 0;
-      background-color: rgba(0, 81, 113, 0);
-      width: 6%;
-      padding-bottom: 39%;
-      height: 0 !important;
-      background-position: 50%;
-      background-repeat: no-repeat;
-      -webkit-transition: none;
-      -moz-transition: none;
-      -ms-transition: none;
-      -o-transition: none;
-      transition: none; }
-    #slider .flexslider .flex-prev {
-      left: 0;
-      background-image: url("../images/slider-arrow-left.png"); }
-    #slider .flexslider .flex-next {
-      right: 0;
-      background-image: url("../images/slider-arrow-right.png"); }
-    #slider .flexslider .flex-direction-nav a:before {
-      content: ""; }
-
-#slider:hover .flex-prev, #slider:hover .flex-next {
-  background-color: rgba(0, 81, 113, 0.5); }
+  #slider .container {
+    position: relative;
+    z-index: 0; }
+  #slider .blue-back {
+    background-image: linear-gradient(to bottom, rgba(78, 131, 155, 0), rgba(78, 131, 155, 0.8));
+    background-color: rgba(78, 131, 155, 0);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: 0.25s ease-in-out;
+    -transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out; }
+    #slider .blue-back h3 {
+      position: relative;
+      bottom: 50%;
+      top: 50%;
+      width: 100%;
+      -webkit-transition: 0.25s ease-in-out;
+      -transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25); }
+      #slider .blue-back h3 strong {
+        font-size: 1.1em; }
+  #slider a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    font-size: .9em; }
+    #slider a:hover .blue-back {
+      background-color: rgba(221, 76, 57, 0.25);
+      height: 100%; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -2072,6 +2076,12 @@ you can add resource intensive styles.
         display: block; }
 
   /* end .nav */
+  /*********************
+  SLIDER STYLES
+  *********************/
+  #slider .blue-back {
+    height: 50%; }
+
   /*********************
   POSTS & CONTENT STYLES
   *********************/

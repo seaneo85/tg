@@ -27,11 +27,13 @@
 									
 					<!-- items mirrored twice, total of 12 -->
 				  </ul>
-					<a href="<?php get_site_url(); ?>/reserve-puppy">
+					<a href="<?php echo get_site_url(); ?>/reserve-puppy">
 						
-						<h3>New puppies arriving soon!<br>
-							<strong>Reserve Your White Golden Retriever Puppy Today!</strong>
-						
+						<span class="blue-back">
+							<h3>New puppies arriving soon!<br>
+								<strong>Reserve Your White Golden Retriever Puppy Today!</strong>
+							</h3>
+						</span>
 					
 					</a>
 				</div> <!-- End .flexslider -->
