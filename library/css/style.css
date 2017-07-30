@@ -610,7 +610,7 @@ BUTTONS
 .btn, #content #FSContact2 input.fscf-button-submit, #content #FSContact1 input.fscf-button-submit, .button:visited {
   color: #fff !important;
   padding: 10px;
-  background-color: #ae1501;
+  background-color: #dd4c39;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
@@ -629,24 +629,24 @@ BUTTONS
   margin-bottom: 1em;
   margin-top: .5em;
   cursor: pointer;
-  background-color: #ae1501;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ae1501), to(#ae1501));
-  background-image: -webkit-linear-gradient(top, #ae1501, #ae1501);
-  background-image: -moz-linear-gradient(top, #ae1501, #ae1501);
-  background-image: -o-linear-gradient(top, #ae1501, #ae1501);
-  background-image: linear-gradient(to bottom, #ae1501, #ae1501);
+  background-color: #dd4c39;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dd4c39), to(#dd4c39));
+  background-image: -webkit-linear-gradient(top, #dd4c39, #dd4c39);
+  background-image: -moz-linear-gradient(top, #dd4c39, #dd4c39);
+  background-image: -o-linear-gradient(top, #dd4c39, #dd4c39);
+  background-image: linear-gradient(to bottom, #dd4c39, #dd4c39);
   text-shadow: none;
   font-size: 1em;
   font-weight: 200;
   border: 0; }
   .btn:hover, #content #FSContact2 input.fscf-button-submit:hover, #content #FSContact1 input.fscf-button-submit:hover, .btn:focus, #content #FSContact2 input.fscf-button-submit:focus, #content #FSContact1 input.fscf-button-submit:focus, .button:visited:hover, .button:visited:focus {
-    background-color: #c71801;
-    background-color: #c71801;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#c71801), to(#c71801));
-    background-image: -webkit-linear-gradient(top, #c71801, #c71801);
-    background-image: -moz-linear-gradient(top, #c71801, #c71801);
-    background-image: -o-linear-gradient(top, #c71801, #c71801);
-    background-image: linear-gradient(to bottom, #c71801, #c71801);
+    background-color: #e1604f;
+    background-color: #e1604f;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e1604f), to(#e1604f));
+    background-image: -webkit-linear-gradient(top, #e1604f, #e1604f);
+    background-image: -moz-linear-gradient(top, #e1604f, #e1604f);
+    background-image: -o-linear-gradient(top, #e1604f, #e1604f);
+    background-image: linear-gradient(to bottom, #e1604f, #e1604f);
     color: white !important;
     text-decoration: none;
     background-position: 0; }
@@ -1666,8 +1666,6 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 .home aside {
-  background-color: #dbe4e8;
-  border: 1px solid #d5ccc2;
   /* sidebar */
   /* aside .widget */
   /* aside.bottom */ }
@@ -1675,11 +1673,18 @@ SIDEBARS & ASIDES
     padding: 0.9375em;
     font-size: 0.875em;
     margin-top: 0;
+    /* end contact-info */
     /* aside.sidebar img */
     /* .img-call */ }
-    .home aside.sidebar ul {
+    .home aside.sidebar ul.contact-info {
       list-style: none;
-      list-style-type: none !important; }
+      list-style-type: none !important;
+      background-color: #dbe4e8;
+      padding: 10px; }
+      .home aside.sidebar ul.contact-info .fa {
+        color: #dd4c39;
+        width: 25px;
+        text-align: center; }
     .home aside.sidebar img {
       max-width: 100%;
       display: block;
@@ -1691,16 +1696,20 @@ SIDEBARS & ASIDES
       /*.img-call img */
       /* img-call:hover span.text */ }
       .home aside.sidebar .img-call span.text {
-        background-color: rgba(0, 81, 113, 0.5);
+        background-color: rgba(221, 76, 57, 0.5);
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 90%;
+        width: 100%;
         color: #fff;
         font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
         padding: 0.625em;
         font-weight: 200;
-        max-width: 345px; }
+        max-width: 345px;
+        text-align: center;
+        -webkit-transition: 0.25s;
+        -transition: 0.25s;
+        transition: 0.25s; }
         .home aside.sidebar .img-call span.text .big {
           font-size: 1.5em; }
         .home aside.sidebar .img-call span.text .small {
@@ -1709,6 +1718,20 @@ SIDEBARS & ASIDES
         margin: 0; }
       .home aside.sidebar .img-call:hover span.text {
         background-color: rgba(0, 118, 164, 0.5); }
+    .home aside.sidebar a.fb-button {
+      background-color: #3b5998;
+      color: white;
+      width: 100%;
+      display: block;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      -webkit-transition: 0.25s;
+      -transition: 0.25s;
+      transition: 0.25s;
+      font-size: 1.25em; }
+      .home aside.sidebar a.fb-button:hover {
+        background-color: #4c70ba; }
   .home aside .widget {
     margin-bottom: 1.875em;
     padding: 0; }
@@ -1720,7 +1743,8 @@ SIDEBARS & ASIDES
       margin-bottom: 0; }
   .home aside.bottom {
     margin-top: 50px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    background-color: #dbe4e8; }
 
 /* aside */
 /*********************

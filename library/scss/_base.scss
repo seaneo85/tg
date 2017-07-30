@@ -400,7 +400,7 @@ SLIDER
 		&:hover {
 			
 			.blue-back {
-				background-color: rgba(#dd4c39, .25);
+				background-color: rgba($red, .25);
 				height: 100%;
 			}
 			
@@ -1388,18 +1388,27 @@ SIDEBARS & ASIDES
 *********************/
 .home aside {
 
-	background-color: $lt-blue;
-	border: 1px solid #d5ccc2;
-
 	&.sidebar {
 		padding: em(15px);
 		font-size: em(14px);
 		margin-top: 0;
 		
-		ul {
+		ul.contact-info {
 			list-style: none;
-  list-style-type: none !important;
-		}
+  		list-style-type: none !important;
+			background-color: $lt-blue;
+			padding: 10px;
+	
+			.fa {
+				color: $red;
+				width: 25px;
+				text-align: center;
+			}
+			
+
+		} /* end contact-info */
+		
+		
 		
 		img {
 			max-width: 100%;
@@ -1412,16 +1421,18 @@ SIDEBARS & ASIDES
 			display: block;
 			
 			span.text {
-				background-color: rgba(0, 81, 113, 0.5);
+				background-color: rgba($red, 0.5);
 				position: absolute;
 				left: 0;
 				bottom: 0;
-				width: 90%;
+				width: 100%;
 				color: $white;
 				font-family: $sans-serif;
 				padding: em(10px);
 				font-weight: 200;
 				max-width: 345px;
+				text-align: center;
+				@include transition(.25s);
 				
 				.big {
 					font-size: 1.5em;
@@ -1444,6 +1455,24 @@ SIDEBARS & ASIDES
 			} /* img-call:hover span.text */
 			
 		} /* .img-call */
+		
+		a.fb-button {
+			background-color: #3b5998;
+			color: white;
+			width: 100%;
+			display: block;
+			padding: 15px;
+			text-align: center;
+			text-decoration: none;
+			@include transition(.25s);
+			font-size: 1.25em;
+			
+			&:hover {
+				background-color: lighten(#3b5998, 10%);
+			}
+		}
+		
+		
 			
 	} /* sidebar */
 
@@ -1483,6 +1512,7 @@ SIDEBARS & ASIDES
 	&.bottom {
 		margin-top: 50px;
 		padding-bottom: 50px;
+		background-color: $lt-blue;
 	} /* aside.bottom */
 } /* aside */
 
