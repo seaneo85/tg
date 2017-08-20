@@ -10,8 +10,8 @@
 					<a href="<?php echo get_site_url(); ?>/reserve-puppy">
 						
 						<span class="blue-back">
-							<h3>New puppies have arrived!!<br>
-								<strong>Reserve Your White Golden Retriever Puppy Today!</strong>
+							<h3>Puppies arriving 2018!<br>
+								<strong>Now taking reservations for 2018 spring litters</strong>
 							</h3>
 						</span>
 					
