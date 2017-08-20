@@ -6,7 +6,7 @@
 			<div class="" id="slider">
 				<div class="container full-width">
 				  <ul class="slides">
-					<img src="<?php echo get_template_directory_uri(); ?>/library/images/home-banner.jpg" alt="child with English Cream golden retriever puppy" width="100%" />
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/home-banner-V2.jpg" alt="child with English Cream golden retriever puppy" width="100%" />
 					<a href="<?php echo get_site_url(); ?>/reserve-puppy">
 						
 						<span class="blue-back">
