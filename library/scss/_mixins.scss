@@ -23,9 +23,9 @@ CONVERT PX TO EM
    @if $target == 0 { @return 0 }
    @return $target / $context + 0em;
 }
- 
+
 $base-font-size: 16px;
- 
+
 /*******************
 
 h1 {
@@ -234,33 +234,35 @@ USAGE: @include border-radius(4px 4px 0 0);
 BUTTONS
 *********************/
 
+
 .btn, .button:visited {
+  @include css-gradient($red,$red);
 	color: $white !important;
-	padding: 10px;
+	padding: 15px;
 	background-color: $red;
-	@include border-radius(8px);
-	@include box-shadow(inset 0px 0px 16px rgba(255,255,255,0.2));
 	text-decoration: none;
 	font-family: $sans-serif;
 	display: inline-block;
 	margin-bottom: 1em;
 	margin-top: .5em;
 	cursor: pointer;
-	@include css-gradient($red,$red);
 	text-shadow: none;
-	font-size: 1em;
+	font-size: 1.25em;
 	font-weight: 200;
 	border: 0;
+  @include transition(.25s);
 
 
 	&:hover, &:focus {
 		background-color: lighten($red, 5%);
-		@include css-gradient(lighten($red, 5%),lighten($red, 5%));
+    @include css-gradient(lighten($red, 5%),lighten($red, 5%));
 		color: white !important;
 		text-decoration: none;
-		background-position: 0;
-		
 	}
+
+  &.block {
+    width: 100%;
+  }
 
 	&:active {
 		@include css-gradient(darken($link-color, 5%), $link-color);

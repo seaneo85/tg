@@ -608,37 +608,28 @@ USAGE: @include border-radius(4px 4px 0 0);
 BUTTONS
 *********************/
 .btn, #content #FSContact2 input.fscf-button-submit, #content #FSContact1 input.fscf-button-submit, .button:visited {
-  color: #fff !important;
-  padding: 10px;
-  background-color: #dd4c39;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  -border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-shadow: inset 0px 0px 16px rgba(255, 255, 255, 0.2);
-  -moz-box-shadow: inset 0px 0px 16px rgba(255, 255, 255, 0.2);
-  -ms-box-shadow: inset 0px 0px 16px rgba(255, 255, 255, 0.2);
-  -o-box-shadow: inset 0px 0px 16px rgba(255, 255, 255, 0.2);
-  -box-shadow: inset 0px 0px 16px rgba(255, 255, 255, 0.2);
-  box-shadow: inset 0px 0px 16px rgba(255, 255, 255, 0.2);
-  text-decoration: none;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  display: inline-block;
-  margin-bottom: 1em;
-  margin-top: .5em;
-  cursor: pointer;
   background-color: #dd4c39;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#dd4c39), to(#dd4c39));
   background-image: -webkit-linear-gradient(top, #dd4c39, #dd4c39);
   background-image: -moz-linear-gradient(top, #dd4c39, #dd4c39);
   background-image: -o-linear-gradient(top, #dd4c39, #dd4c39);
   background-image: linear-gradient(to bottom, #dd4c39, #dd4c39);
+  color: #fff !important;
+  padding: 15px;
+  background-color: #dd4c39;
+  text-decoration: none;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-top: .5em;
+  cursor: pointer;
   text-shadow: none;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 200;
-  border: 0; }
+  border: 0;
+  -webkit-transition: 0.25s;
+  -transition: 0.25s;
+  transition: 0.25s; }
   .btn:hover, #content #FSContact2 input.fscf-button-submit:hover, #content #FSContact1 input.fscf-button-submit:hover, .btn:focus, #content #FSContact2 input.fscf-button-submit:focus, #content #FSContact1 input.fscf-button-submit:focus, .button:visited:hover, .button:visited:focus {
     background-color: #e1604f;
     background-color: #e1604f;
@@ -648,8 +639,9 @@ BUTTONS
     background-image: -o-linear-gradient(top, #e1604f, #e1604f);
     background-image: linear-gradient(to bottom, #e1604f, #e1604f);
     color: white !important;
-    text-decoration: none;
-    background-position: 0; }
+    text-decoration: none; }
+  .btn.block, #content #FSContact2 input.block.fscf-button-submit, #content #FSContact1 input.block.fscf-button-submit, .button:visited.block {
+    width: 100%; }
   .btn:active, #content #FSContact2 input.fscf-button-submit:active, #content #FSContact1 input.fscf-button-submit:active, .button:visited:active {
     background-color: #08c;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#0077b3), to(#08c));
@@ -1005,11 +997,9 @@ h3, .h3 {
 
 #content ul {
   margin-top: 0;
-  list-style-type: disc;
-  list-style-position: inside; }
+  list-style-type: disc; }
 #content ol {
-  list-style-type: decimal;
-  list-style-position: inside; }
+  list-style-type: decimal; }
 #content p {
   margin: 0 0 10px 0; }
 #content .panel-group {
@@ -1078,6 +1068,10 @@ h3, .h3 {
   */ }
   .entry-content p {
     margin: 0 0 10px 0; }
+  .entry-content ul, .entry-content ol {
+    margin-left: 10px;
+    padding-left: 10px;
+    list-style-position: outside; }
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
@@ -1136,6 +1130,10 @@ h3, .h3 {
   height: 100%; }
 
 /*Puppies Page */
+#content .slides {
+  margin-left: 0;
+  padding-left: 0; }
+
 h2.alt {
   background-color: #edf2f5;
   margin-bottom: 0;
@@ -1202,16 +1200,23 @@ h2.alt {
   margin-bottom: 40px; }
   .litter-feed h2.alt {
     font-size: 1.625em; }
-  .litter-feed li {
-    border: 1px solid #e2e6e9;
-    margin-bottom: 20px;
+  .litter-feed ul.contact-info {
     list-style: none;
-    text-align: center; }
-    .litter-feed li img {
-      border: 0;
-      border-radius: 50%;
-      margin: 0 auto;
-      margin-bottom: 10px; }
+    list-style-type: none !important;
+    background-color: #dbe4e8;
+    padding: 10px;
+    margin-left: 0; }
+    .litter-feed ul.contact-info li {
+      list-style: none; }
+      .litter-feed ul.contact-info li .fa {
+        color: #dd4c39;
+        width: 25px;
+        text-align: center; }
+  .litter-feed li img {
+    border: 0;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px; }
   .litter-feed .born-date {
     display: block;
     width: 100%;
@@ -1673,18 +1678,8 @@ SIDEBARS & ASIDES
     padding: 0.9375em;
     font-size: 0.875em;
     margin-top: 0;
-    /* end contact-info */
     /* aside.sidebar img */
     /* .img-call */ }
-    .home aside.sidebar ul.contact-info {
-      list-style: none;
-      list-style-type: none !important;
-      background-color: #dbe4e8;
-      padding: 10px; }
-      .home aside.sidebar ul.contact-info .fa {
-        color: #dd4c39;
-        width: 25px;
-        text-align: center; }
     .home aside.sidebar img {
       max-width: 100%;
       display: block;
@@ -1747,6 +1742,17 @@ SIDEBARS & ASIDES
     background-color: #dbe4e8; }
 
 /* aside */
+ul.contact-info {
+  list-style: none;
+  list-style-type: none !important;
+  background-color: #dbe4e8;
+  padding: 10px; }
+  ul.contact-info .fa {
+    color: #dd4c39;
+    width: 25px;
+    text-align: center; }
+
+/* end contact-info */
 /*********************
 FOOTER STYLES
 *********************/
