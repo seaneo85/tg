@@ -46,7 +46,7 @@
 
 							<?php else : ?>
 
-									<article id="post-not-found" class="hentry clearfix">
+									<article id="post-not-found" class="clearfix">
 										<header class="article-header">
 											<h1><?php _e( 'Sorry, No Results.', 'bonestheme' ); ?></h1>
 										</header>
