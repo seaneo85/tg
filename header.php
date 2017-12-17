@@ -17,7 +17,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 		<!-- Google Chrome Frame for IE -->
 
-		<title><?php bloginfo('name'); ?></title>
 
 		<!-- mobile meta (hooray!) -->
 		<meta name="HandheldFriendly" content="True">
