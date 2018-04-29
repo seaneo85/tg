@@ -932,7 +932,7 @@ SLIDER
     position: relative;
     z-index: 0; }
   #slider .blue-back {
-    background-image: linear-gradient(to bottom, rgba(78, 131, 155, 0), rgba(78, 131, 155, 0.8));
+    background-image: linear-gradient(to bottom, rgba(221, 76, 57, 0.25), rgba(78, 131, 155, 0.8));
     background-color: rgba(78, 131, 155, 0);
     display: block;
     position: absolute;
@@ -1013,6 +1013,10 @@ h3, .h3 {
   list-style: none; }
 #content .tab-content ul {
   list-style: none; }
+#content .gallery-box p {
+  background-color: #eff7fb;
+  padding: 20px;
+  margin-bottom: 40px; }
 
 .main-content {
   margin-bottom: 1.5625em; }
@@ -1067,7 +1071,9 @@ h3, .h3 {
   but it's up to you. Feel free to change it up.
   */ }
   .entry-content p {
-    margin: 0 0 10px 0; }
+    margin: 0 0 10px 0;
+    font-size: 1.1em;
+    line-height: 1.5; }
   .entry-content ul, .entry-content ol {
     margin-left: 10px;
     padding-left: 10px;
@@ -2109,9 +2115,6 @@ you can add resource intensive styles.
   /*********************
   SLIDER STYLES
   *********************/
-  #slider .blue-back {
-    height: 50%; }
-
   /*********************
   POSTS & CONTENT STYLES
   *********************/
