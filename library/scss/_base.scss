@@ -565,6 +565,18 @@ POSTS & CONTENT STYLES
 
 			p {
 				margin: 0 0 10px 0;
+				font-size: 1.1em;
+				line-height: 1.4;
+			}
+			
+			.gallery-box {
+				background-color: #dbe4e8;
+				padding: 20px;
+				margin-bottom: 30px;
+				
+				p {
+					margin-bottom: 0;
+				}
 			}
 
 
@@ -672,8 +684,12 @@ POSTS & CONTENT STYLES
 		.gallery {
 
 			.ms-item {
-			  width: 33.3333333333%;
+			  width: 100%;
 			  padding: 0 10px;
+				
+				img {
+					border: 5px solid #dbe4e8;
+				}
 			}
 
 			dl.gallery-item {

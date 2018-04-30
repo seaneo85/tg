@@ -1013,10 +1013,6 @@ h3, .h3 {
   list-style: none; }
 #content .tab-content ul {
   list-style: none; }
-#content .gallery-box p {
-  background-color: #eff7fb;
-  padding: 20px;
-  margin-bottom: 40px; }
 
 .main-content {
   margin-bottom: 1.5625em; }
@@ -1073,7 +1069,13 @@ h3, .h3 {
   .entry-content p {
     margin: 0 0 10px 0;
     font-size: 1.1em;
-    line-height: 1.5; }
+    line-height: 1.4; }
+  .entry-content .gallery-box {
+    background-color: #dbe4e8;
+    padding: 20px;
+    margin-bottom: 30px; }
+    .entry-content .gallery-box p {
+      margin-bottom: 0; }
   .entry-content ul, .entry-content ol {
     margin-left: 10px;
     padding-left: 10px;
@@ -1121,8 +1123,10 @@ h3, .h3 {
 /* end .wp-caption */
 /* image gallery styles */
 .gallery .ms-item {
-  width: 33.3333333333%;
+  width: 100%;
   padding: 0 10px; }
+  .gallery .ms-item img {
+    border: 5px solid #dbe4e8; }
 .gallery dl.gallery-item {
   margin-top: 0;
   margin-bottom: 30px; }
@@ -1852,6 +1856,9 @@ tweeners.
   upon your base.scss styles.
   
   ******************************************************************/
+  .gallery .ms-item {
+    width: 50%; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
@@ -2118,6 +2125,9 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
+  .gallery .ms-item {
+    width: 25%; }
+
   .quote {
     padding-left: 30px;
     position: relative;
