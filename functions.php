@@ -21,13 +21,16 @@ endif; //! slug_scripts_masonry exists
 if ( ! function_exists( 'slug_masonry_init' )) :
 function slug_masonry_init() { ?>
   <script type="text/javascript">
-
+      
       jQuery(window).load(function() {
-    var container = document.querySelector('#ms-container');
-    var msnry = new Masonry( container, {
-      itemSelector: '.ms-item',
-      columnWidth: '.ms-item',
-    });
+        
+        if( $('#ms-container').length ) {
+            var container = document.querySelector('#ms-container');
+            var msnry = new Masonry( container, {
+              itemSelector: '.ms-item',
+              columnWidth: '.ms-item',
+            });
+        }
 
       });
 
