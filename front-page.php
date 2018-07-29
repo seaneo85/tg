@@ -6,29 +6,29 @@
 			<div class="" id="slider">
 				<div class="container full-width">
 				  <ul class="slides">
-					<img src="<?php echo get_template_directory_uri(); ?>/library/images/home-banner-V2.jpg" alt="purchase white golden retriever call to action" width="100%" />
+					<img src="<?php echo get_template_directory_uri(); ?>/library/images/home-banner-V2.jpg" alt="child with English Cream golden retriever puppy" width="100%" />
 					<a href="<?php echo get_site_url(); ?>/reserve-puppy">
-
-						<span class="blue-back">
-							<h3>Puppies arriving 2018!<br>
-								<strong>Now taking reservations for 2018 spring litters</strong>
+						
+						<span class="blue-back" style="font-size:1.2em;">
+							<h3>Puppies arriving in JULY!<br>
+								<strong>Now taking reservations for July litters!</strong>
 							</h3>
 						</span>
-
+					
 					</a>
 				</div> <!-- End .flexslider -->
 			</div> <!-- End slider -->
 
 			<div class="container" id="content">
 
-
+				
 						<header class="article-header">
 
 									<h1 class="page-name" itemprop="headline"><?php the_title(); ?>
 									<span><?php echo do_shortcode('[types field="website-description" id="37"][/types]'); ?></span>
 									<img alt="" src="<?php bloginfo('template_directory'); ?>/library/images/red-paw.png"></h1>
 
-
+									
 
 
 						</header> <!-- end article header -->
