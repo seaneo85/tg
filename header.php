@@ -58,7 +58,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="row-fluid">
 						<div class="span12">
 							<div id="logo-call-to-act">
-								<a id="logo" class="logo" href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/treasure-goldens-logo.png" alt="<?php bloginfo('name'); ?>"></a>
+								<a id="logo" class="logo" href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/library/images/treasure-goldens-logo.png" alt="<?php bloginfo('name'); ?>"></a>
 								<div id="call-to-act">
 									<a href="<?php echo home_url(); ?>/reserve-puppy" class="reserve-button">Reserve your puppy!</a>
 									<p><?php echo do_shortcode( '[wpv-view name="Litter- coming or available text"]' ) ?></p>
