@@ -5,17 +5,12 @@
 			<!-- Place somewhere in the <body> of your page -->
 			<div class="" id="slider">
 				<div class="container full-width">
-				  <ul class="slides">
-					<img src="<?php echo get_template_directory_uri(); ?>/library/images/home-banner-V2.jpg" alt="child with English Cream golden retriever puppy" width="100%" />
-					<a href="<?php echo get_site_url(); ?>/reserve-puppy">
-						
-						<span class="blue-back" style="font-size:1.2em;">
-							<h3>Puppies arriving in JULY!<br>
-								<strong>Now taking reservations for July litters!</strong>
-							</h3>
-						</span>
-					
-					</a>
+					<?php
+						$args = array(
+						    'id' => 601
+						);
+						echo render_view( $args );
+					?>
 				</div> <!-- End .flexslider -->
 			</div> <!-- End slider -->
 
