@@ -7,7 +7,7 @@
 				<div class="container full-width">
 					<?php
 						$args = array(
-						    'id' => 601
+						    'title' => 'Hero (homepage)'
 						);
 						echo render_view( $args );
 					?>
