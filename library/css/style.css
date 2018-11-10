@@ -1856,8 +1856,14 @@ tweeners.
   upon your base.scss styles.
   
   ******************************************************************/
-  .gallery .ms-item {
-    width: 50%; }
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px; }
+    .gallery img {
+      margin: 0; }
+    .gallery .ms-item {
+      width: 50%; }
 
   /*********************
   NAVIGATION STYLES
@@ -2125,8 +2131,10 @@ you can add resource intensive styles.
   /*********************
   POSTS & CONTENT STYLES
   *********************/
-  .gallery .ms-item {
-    width: 25%; }
+  .gallery {
+    grid-template-columns: auto auto auto; }
+    .gallery .ms-item {
+      width: 25%; }
 
   .quote {
     padding-left: 30px;
@@ -2270,7 +2278,9 @@ you can add resource intensive styles.
   This is the desktop size. It's larger than an iPad so it will only
   be seen on the Desktop. 
   
-  ******************************************************************/ }
+  ******************************************************************/
+  .gallery {
+    grid-template-columns: auto auto auto auto; } }
 /*
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

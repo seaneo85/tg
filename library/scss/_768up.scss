@@ -232,6 +232,8 @@ POSTS & CONTENT STYLES
 
 
 	.gallery {
+		grid-template-columns: auto auto auto;
+		
 		.ms-item {
 			width: 25%;
 		}

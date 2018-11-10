@@ -16,6 +16,14 @@ upon your base.scss styles.
 ******************************************************************/
 
 .gallery {
+	display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+	
+	
+	img {
+		margin: 0;
+	}
 	
 	.ms-item {
 		width: 50%;
