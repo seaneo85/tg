@@ -74,15 +74,6 @@ jQuery(document).ready(function($) {
 	});
 
 
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-		controlNav: false,
-		prevText: "",
-		nextText: ""
-	  });
-  });
-
-
 
 
 }); /* end of as page load scripts */

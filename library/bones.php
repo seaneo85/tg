@@ -126,13 +126,13 @@ function bones_scripts_and_styles() {
   if (!is_admin()) {
 
     // modernizr (without media query polyfill)
-    wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
+    //wp_register_script( 'bones-modernizr', get_stylesheet_directory_uri() . '/library/js/libs/modernizr.custom.min.js', array(), '2.5.3', false );
 
     // register main stylesheet
     wp_register_style( 'bones-stylesheet', get_stylesheet_directory_uri() . '/library/css/style.css', array(), '', 'all' );
 
     // ie-only style sheet
-    wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
+    //wp_register_style( 'bones-ie-only', get_stylesheet_directory_uri() . '/library/css/ie.css', array(), '' );
 	
 	// boostrap style sheet
     wp_register_style( 'bootstrap', get_stylesheet_directory_uri() . '/library/css/bootstrap.min.css', array(), '' );
@@ -144,9 +144,9 @@ function bones_scripts_and_styles() {
     wp_register_style( 'raleway-font', 'http://fonts.googleapis.com/css?family=Raleway:400,300', array(), '' );
 	
 	// flex slider
-    wp_register_style( 'flex', get_stylesheet_directory_uri() . '/library/css/flexslider.css', array(), '' );
+  //  wp_register_style( 'flex', get_stylesheet_directory_uri() . '/library/css/flexslider.css', array(), '' );
 	
-	wp_register_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), '' );
+	   wp_register_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css', array(), '' );
 
     // comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
@@ -157,13 +157,13 @@ function bones_scripts_and_styles() {
     wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery' ), '', true );
 	
 	//adding scripts file in the footer
-    wp_register_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/library/js/bootstrap.min.js', array( 'jquery' ), '', true );
+  //  wp_register_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/library/js/bootstrap.min.js', array( 'jquery' ), '', true );
 	
 	//adding scripts file in the footer
-    wp_register_script( 'flex-js', get_stylesheet_directory_uri() . '/library/js/jquery.flexslider-min.js', array( 'jquery' ), '', true );
+    // wp_register_script( 'flex-js', get_stylesheet_directory_uri() . '/library/js/jquery.flexslider-min.js', array( 'jquery' ), '', true );
 	
 	//adding scripts file in the footer
-    wp_register_script( 'respond-js', get_stylesheet_directory_uri() . '/library/js/respond.min.js', array( 'jquery' ), '', true );
+    //wp_register_script( 'respond-js', get_stylesheet_directory_uri() . '/library/js/respond.min.js', array( 'jquery' ), '', true );
 	
 
 	
