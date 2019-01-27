@@ -141,7 +141,7 @@ function bones_scripts_and_styles() {
     wp_register_style( 'bootstrap-res', get_stylesheet_directory_uri() . '/library/css/bootstrap-responsive.min.css', array(), '' );
 	
 	// raleway font
-    wp_register_style( 'raleway-font', 'http://fonts.googleapis.com/css?family=Raleway:400,300', array(), '' );
+    wp_register_style( 'raleway-font', 'https://fonts.googleapis.com/css?family=Raleway:400,300', array(), '' );
 	
 	// flex slider
   //  wp_register_style( 'flex', get_stylesheet_directory_uri() . '/library/css/flexslider.css', array(), '' );
