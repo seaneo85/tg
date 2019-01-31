@@ -785,6 +785,8 @@ a, a:visited {
 
 #header a:focus, #footer a:focus {
   outline-color: white; }
+#header nav a:focus, #footer nav a:focus {
+  background-color: transparent; }
 
 /*********************
 HEADER STYLES

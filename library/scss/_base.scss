@@ -169,6 +169,10 @@ a, a:visited {
 	a:focus {
 		outline-color: white;
 	}
+	
+	nav a:focus {
+		background-color: transparent;
+	}
 }
 
 
