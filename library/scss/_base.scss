@@ -144,6 +144,13 @@ a, a:visited {
 	&:hover, &:focus {
 		color: $link-hover;
 	}
+	
+	#header, #footer {
+		
+		a:focus {
+			outline-color: white;
+		}
+	}
 
 	/* on click */
 	&:active {
