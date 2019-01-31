@@ -1134,6 +1134,16 @@ h3, .h3 {
   color: black; }
 
 /* end .gallery */
+.puppy-gallery {
+  margin-bottom: 30px;
+  border-bottom: #ccc;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px; }
+  .puppy-gallery img {
+    margin-bottom: 0; }
+
 /* gallery caption styles */
 .cboxPhoto {
   width: 100%;

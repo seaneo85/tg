@@ -710,6 +710,19 @@ POSTS & CONTENT STYLES
 			}
 
 		} /* end .gallery */
+		
+		.puppy-gallery {
+		  margin-bottom: 30px;
+		  border-bottom: #ccc;
+		  padding-bottom:30px;
+		  display: grid;
+		  grid-template-columns: auto auto;
+		  grid-gap: 10px;
+			
+			img {
+			  margin-bottom: 0;
+			}
+		}
 
 		/* gallery caption styles */
 		.gallery-caption {}
