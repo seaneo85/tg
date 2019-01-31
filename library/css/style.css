@@ -775,8 +775,6 @@ a, a:visited {
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #00699e; }
-  a #header a:focus, a #footer a:focus, a:visited #header a:focus, a:visited #footer a:focus {
-    outline-color: white; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -784,6 +782,9 @@ a, a:visited {
     for mobile devices.
     */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
+#header a:focus, #footer a:focus {
+  outline-color: white; }
 
 /*********************
 HEADER STYLES

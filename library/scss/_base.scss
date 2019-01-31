@@ -145,12 +145,7 @@ a, a:visited {
 		color: $link-hover;
 	}
 	
-	#header, #footer {
-		
-		a:focus {
-			outline-color: white;
-		}
-	}
+	
 
 	/* on click */
 	&:active {
@@ -165,6 +160,14 @@ a, a:visited {
 		for mobile devices.
 		*/
 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+
+#header, #footer {
+	
+	a:focus {
+		outline-color: white;
 	}
 }
 
