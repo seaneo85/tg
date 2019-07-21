@@ -1347,6 +1347,27 @@ h2.alt {
   color: #00699e;
   margin-bottom: 30px; }
 
+/* Blog */
+.news-updates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .news-updates article {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    width: 48%; }
+  .news-updates footer.entry-footer .comments {
+    display: none; }
+  .news-updates footer.entry-footer > span {
+    margin-right: 10px;
+    font-size: .9em; }
+    .news-updates footer.entry-footer > span a {
+      color: #444; }
+
+article footer {
+  background-color: transparent;
+  border: 0; }
+
 /*------------------------------------------------*/
 /*-----------[Fast Secure Contact Form]-----------*/
 /*------------------------------------------------*/
