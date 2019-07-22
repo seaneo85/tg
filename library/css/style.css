@@ -1354,8 +1354,7 @@ h2.alt {
   justify-content: space-between; }
   .news-updates article {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 30px;
-    width: 48%; }
+    padding-bottom: 30px; }
   .news-updates footer.entry-footer .comments {
     display: none; }
   .news-updates footer.entry-footer > span {
@@ -1716,27 +1715,27 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.home aside {
+aside {
   /* sidebar */
   /* aside .widget */
   /* aside.bottom */ }
-  .home aside.sidebar {
+  aside.sidebar {
     padding: 0.9375em;
     font-size: 0.875em;
     margin-top: 0;
     /* aside.sidebar img */
     /* .img-call */ }
-    .home aside.sidebar img {
+    aside.sidebar img {
       max-width: 100%;
       display: block;
       margin-bottom: 0.9375em; }
-    .home aside.sidebar .img-call {
+    aside.sidebar .img-call {
       position: relative;
       display: block;
       /* .img-call span.text */
       /*.img-call img */
       /* img-call:hover span.text */ }
-      .home aside.sidebar .img-call span.text {
+      aside.sidebar .img-call span.text {
         background-color: rgba(221, 76, 57, 0.5);
         position: absolute;
         left: 0;
@@ -1751,15 +1750,15 @@ SIDEBARS & ASIDES
         -webkit-transition: 0.25s;
         -transition: 0.25s;
         transition: 0.25s; }
-        .home aside.sidebar .img-call span.text .big {
+        aside.sidebar .img-call span.text .big {
           font-size: 1.5em; }
-        .home aside.sidebar .img-call span.text .small {
+        aside.sidebar .img-call span.text .small {
           letter-spacing: 1px; }
-      .home aside.sidebar .img-call img {
+      aside.sidebar .img-call img {
         margin: 0; }
-      .home aside.sidebar .img-call:hover span.text {
+      aside.sidebar .img-call:hover span.text {
         background-color: rgba(0, 118, 164, 0.5); }
-    .home aside.sidebar a.fb-button {
+    aside.sidebar a.fb-button {
       background-color: #3b5998;
       color: white;
       width: 100%;
@@ -1771,18 +1770,18 @@ SIDEBARS & ASIDES
       -transition: 0.25s;
       transition: 0.25s;
       font-size: 1.25em; }
-      .home aside.sidebar a.fb-button:hover {
+      aside.sidebar a.fb-button:hover {
         background-color: #4c70ba; }
-  .home aside .widget {
+  aside .widget {
     margin-bottom: 1.875em;
     padding: 0; }
-    .home aside .widget ul li {
+    aside .widget ul li {
       /* deep nesting */ }
-    .home aside .widget .btn, .home aside .widget #content #FSContact2 input.fscf-button-submit, #content #FSContact2 .home aside .widget input.fscf-button-submit, .home aside .widget #content #FSContact1 input.fscf-button-submit, #content #FSContact1 .home aside .widget input.fscf-button-submit {
+    aside .widget .btn, aside .widget #content #FSContact2 input.fscf-button-submit, #content #FSContact2 aside .widget input.fscf-button-submit, aside .widget #content #FSContact1 input.fscf-button-submit, #content #FSContact1 aside .widget input.fscf-button-submit {
       margin-bottom: 0; }
-    .home aside .widget:last-child {
+    aside .widget:last-child {
       margin-bottom: 0; }
-  .home aside.bottom {
+  aside.bottom {
     margin-top: 50px;
     padding-bottom: 50px;
     background-color: #dbe4e8; }

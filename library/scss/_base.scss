@@ -1061,7 +1061,6 @@ POSTS & CONTENT STYLES
 		article {
 			border-bottom: 1px solid #ccc;
     	padding-bottom: 30px;
-			width: 48%;
 		}
 		
 		footer.entry-footer {
@@ -1488,7 +1487,7 @@ COMMENT FORM STYLES
 /*********************
 SIDEBARS & ASIDES
 *********************/
-.home aside {
+aside {
 
 	&.sidebar {
 		padding: em(15px);
