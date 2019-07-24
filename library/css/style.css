@@ -1355,6 +1355,9 @@ h2.alt {
   .news-updates article {
     border-bottom: 1px solid #ccc;
     padding-bottom: 30px; }
+  .news-updates .posted-on {
+    margin-bottom: 20px;
+    display: block; }
   .news-updates footer.entry-footer .comments {
     display: none; }
   .news-updates footer.entry-footer > span {
