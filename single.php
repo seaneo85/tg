@@ -21,16 +21,20 @@
 								<section class="entry-content clearfix news-updates" itemprop="articleBody">
 									
 									<?php
-									if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-										echo '<p>' . get_the_post_thumbnail( $page->ID, 'large' ) . '</p>';
-									}
+									if ( is_singular('post') ) { // check if the post has a Post Thumbnail assigned to it.
+										if (has_post_thumbnail()) {
+											echo '<p>' . get_the_post_thumbnail( $page->ID, 'large' ) . '</p>';
+										}
 									?>
-									
 									<span class="posted-on">
 										<time class="entry-date published updated" datetime="<?php the_date( 'Y-m-d' ); ?>">
 											<i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo get_the_date( 'F j, Y' ); ?>
 										</time>
 									</span>
+									
+									<?php } ?>
+									
+									
 									
 									<?php the_content(); ?>
 								
