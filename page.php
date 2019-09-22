@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+		<!-- PAGE.php -->
 			<!-- Place somewhere in the <body> of your page -->
 			
 			<div class="container" id="content">
