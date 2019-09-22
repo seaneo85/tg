@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!-- INDEX.php -->
 
 			<div id="content">
 
