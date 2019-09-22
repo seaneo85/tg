@@ -57,24 +57,22 @@ header {
 
 header .nav > li {
 		width: 20%;
-		margin: .7em 0em .6em 0em;
+		margin: .7em 0em 0em 0em;
+		height: auto;
+		flex-grow: 1;
   	}
     
     header .nav {
 	margin: 0 auto;
 	float: none;
-	display: block;	
+	display: flex !important;	
 	margin: 0;
 	border-top: 1px solid #649aac;
+	align-items: flex-end;
 }
 
 span.mobile-menu span {
 	display: none !important;
-}
-
-header .nav {
-	margin: 0;
-	display: block !important;
 }
   
   
@@ -87,18 +85,22 @@ header .nav {
   	letter-spacing: 1px;
 	font-family: 'Raleway', sans-serif;
     width: 20%;
-    margin: .7em 0em .6em 0em;
+    margin: .7em 0em 0em 0em;
     position: relative;
-    height: 1em;
+    height: auto;
     border: 0;
+		flex-grow: 1;
   	}
     
      header .nav>li>a {
      display: block;
-     position: absolute;
+     position: static;
      width: 100%;
-     padding-bottom: .7em;
-    padding-top: 0;
+     padding-bottom: 15px;
+    	padding-top: 0;
+			line-height: 1.4;
+			border-bottom: 5px solid #2388ce;
+			font-size: .9em;
      }
      
 header .nav>li.active>a, header .nav>li>a:hover {
