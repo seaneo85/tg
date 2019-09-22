@@ -1579,6 +1579,7 @@ aside {
 		padding: 0;
 
 		ul {
+			padding-left: 20px;
 
 			li {
 
@@ -1600,7 +1601,11 @@ aside {
 		}
 
 		&:last-child { margin-bottom: 0;}
-
+		
+		&.widget_recent_entries {
+			background-color: #dbe4e8;
+			padding: 10px;
+		}
 	} /* aside .widget */
 
 	&.bottom {
